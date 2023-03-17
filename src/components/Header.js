@@ -8,13 +8,13 @@ export default class Header extends Component {
       <header className="header">
         <Menu fixed='top' inverted fluid>
           <Menu.Item as='a' header>
-           Camunda Tasklist
+           Land-Allotment
          </Menu.Item>
           <Menu.Item>
             <Link to="/">Home</Link>
           </Menu.Item>
           <Menu.Item>
-            <Link to="/startProcess/list">Start Process</Link>
+            <Link to="/startProcess/list">All Process diagrams</Link>
           </Menu.Item>
           <Menu.Item>
             <Link to="/tasklist">Tasklist</Link>

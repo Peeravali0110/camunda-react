@@ -8,15 +8,14 @@ const SimpleForm = props => {
   const { handleSubmit } = props
   return (
     <Form onSubmit={handleSubmit}>
-      <Field name='firstName' component={InputField} label='First Name' placeholder='First Name'
+      <Field name='Firm Name' component={InputField} label='Firm Name' placeholder='Firm Name'
         validate={[ Validation.required, Validation.maxLength15, Validation.minLength2 ]}/>
-      <Field name='lastName' component={InputField} label='Last Name' placeholder='Last Name'
+      <Field name='Person to Contact' component={InputField} label='Person to Contact' placeholder='Person to Contact'
         validate={[ Validation.required, Validation.maxLength15, Validation.minLength2 ]} />
       <Field name='email' component={InputField} label='E-Mail' placeholder='E-Mail'
         validate={[ Validation.required, Validation.minLength2, Validation.email ]}/>
-      <Field name='items' component={TextAreaField} label='Items' />
 
-      <Form.Field control={Button} primary type='submit'>Order!</Form.Field>
+      <Form.Field control={Button} primary type='submit'>Submit!</Form.Field>
     </Form>
   )
 }

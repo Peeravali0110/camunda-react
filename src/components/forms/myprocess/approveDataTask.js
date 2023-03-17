@@ -10,7 +10,7 @@ let SimpleForm = props => {
   return (
     <Form onSubmit={handleSubmit}>
       <legend>Approve Form</legend>
-      <Field name='lastName' component={InputField} label='Last Name' placeholder='Last Name'
+      <Field name='Firm Name' component={InputField} label='Firm Name' placeholder='Firm Name'
         validate={[ Validation.required, Validation.maxLength15, Validation.minLength2 ]}/>
       <Field name='items' component={TextAreaField} label='Items'/>
       <Form.Group>
